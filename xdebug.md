@@ -1,6 +1,6 @@
 ---
 page: xdebug
-title: xdebug
+title: Xdebug
 nav: Xdebug
 group: navigation
 weight: 6
