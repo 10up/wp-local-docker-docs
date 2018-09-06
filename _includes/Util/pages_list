@@ -1,0 +1,24 @@
+{% for node in pages_list %}
+  {% if null != node.title %}
+    {% if null == group or node.group == group %}
+      {% if page.url == node.url %}
+      <li class="current-menu-item">
+      {% else %}
+      <li>
+      {% endif %}
+      	<a href="{{ site.baseurl }}{{ node.url }}">{{ node.nav }}</a>
+      	{% if node.subnav %}
+      	{% assign subnav_list = node.subnav %}
+      	<ul class="subnav">
+      	  {% for subnav in subnav_list %}
+		      <li><a href="{{ site.baseurl }}{{ node.url }}#{{ subnav.tag }}">{{ subnav.title }}</a></li>
+          {% endfor %}
+      	</ul>
+      	{% assign subnav_list = nil %}
+      	{% endif %}
+      </li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign pages_list = nil %}
+{% assign group = nil %}
