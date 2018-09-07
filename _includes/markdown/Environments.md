@@ -9,6 +9,9 @@ for the testing of software and is not intended to ever be installed into the gl
 `10updocker delete <hostname>` will delete an environment with the given hostname. Any local files, docker volumes, and 
 databases related to the environment will be deleted permanently.
 
+A special hostname `all` is available that will delete all environments. You will be asked to confirm deletion of each
+environment.
+
 ## Stop an Environment
 
 `10updocker stop <hostname>` will stop an environment from running while retaining all files, docker volumes, and databases
