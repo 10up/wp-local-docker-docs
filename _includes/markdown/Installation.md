@@ -27,7 +27,7 @@ NodeJS can be installed via a package manager for many linux platforms [followin
 ## Installation
 
 Once all installation prerequisites have been met, WP Local Docker is installed as a global npm package by running
-`npm install -g wp-local-docker-generator`. You can confirm it has been installed by running `10updocker --version`.
+`npm install -g wp-local-docker`. You can confirm it has been installed by running `10updocker --version`.
 
 ## Configuration
 
@@ -37,4 +37,4 @@ this path, run `10updocker configure` and enter your desired path.
 
 ## Updating
 
-To update WP Local Docker, run `npm update -g wp-local-docker-generator`
+To update WP Local Docker, run `npm update -g wp-local-docker`
