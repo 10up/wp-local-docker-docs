@@ -10,7 +10,8 @@
 		position: absolute;
 		bottom: -$header-logo-small-protrusion;
 		left: 50%;
-		margin-left: -$header-logo-small / 2;
+		//margin-left: -$header-logo-small / 2;
+		margin-left: -30px; // Because menu items are not evenly sized
 		height: $header-logo-small;
 		width: $header-logo-small;
 		border-radius: 100%;
@@ -20,7 +21,8 @@
 		-webkit-background-size: 50%;
 		background-size: 50%;
 		@include breakpoint($breakpoint-bravo) {
-			margin-left: -$header-logo-large / 2;
+			//margin-left: -$header-logo-large / 2;
+			margin-left: -30px; // Because menu items are not evenly sized
 			bottom: -$header-logo-large-protrusion;
 			height: $header-logo-large;
 			width: $header-logo-large;
