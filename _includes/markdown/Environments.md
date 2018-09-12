@@ -1,8 +1,11 @@
 ## Create an Environment
 
 `10updocker create` will present you with a series of prompts to configure your environment to suit your needs.
+
 It is recommended that you use the `.test` top level domain (TLD) for your local environments, as this TLD is reserved 
-for the testing of software and is not intended to ever be installed into the global Domain Name System.
+for the testing of software and is not intended to ever be installed into the global Domain Name System. Additionally, 
+WP Local Docker is configured to send any container to container traffic for .test TLDs directly to the gateway
+container, so that things like WP Cron and the REST API can work between environments out of the box.
 
 ## Delete an Environment
 
@@ -14,8 +17,8 @@ environment.
 
 ## Stop an Environment
 
-`10updocker stop <hostname>` will stop an environment from running while retaining all files, docker volumes, and databases
-related to the environment.
+`10updocker stop <hostname>` will stop an environment from running while retaining all files, docker volumes, and 
+databases related to the environment.
 
 A special hostname `all` is available that will stop all running environments as well as the global services.
 
