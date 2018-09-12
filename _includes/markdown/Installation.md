@@ -31,9 +31,11 @@ Once all installation prerequisites have been met, WP Local Docker is installed 
 
 ## Configuration
 
-The first time you run a WP Local Docker command, you will be asked if you want to use configuration defaults.
-By default, WP Local Docker will store all environments within `~/wp-local-docker-sites`. If you would like to customize
-this path, run `10updocker configure` and enter your desired path.
+The first time you run a WP Local Docker command, default configuration settings will be used if you have not manually
+configured WP Local Docker beforehand. By default, WP Local Docker will store all environments within the 
+`~/wp-local-docker-sites` directory and try to manage your hosts file when creating and deleting environments. If you 
+would like to customize the environment path or opt to not have WP Local Docker update your hosts file, run 
+`10updocker configure` and follow the prompts.
 
 ## Updating
 
