@@ -17,7 +17,7 @@ name: WP Local Docker
 title: WP Local Docker
 description: >- # this means to ignore newlines until "baseurl:"
   WP Local Docker is an easy to use docker based development environment, focused on WordPress development.
-baseurl: "/wp-local-docker"
+baseurl: "/wp-local-docker-docs"
 url: "https://10up.github.io/"
 author:
   name: 10up
