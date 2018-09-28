@@ -34,6 +34,12 @@ A special hostname `all` is available that will start all environments as well a
 
 A special hostname `all` is available that will restart all environments as well as the global services.
 
+## Elasticsearch
+
+If you have enabled Elasticsearch for a particular environment, you can send requests from the host machine to the 
+Elasticsearch server by prefixing the url path with `/__elasticsearch/`. For example, if you wanted to hit the 
+`/_all/_search/` endpoint of Elasticsearch, the URL would look like: `http://<hostname>/__elasticsearch/_all/_search`
+
 ## WP Snapshots
 
 See the section on [using WP Snapshots](../wp-snapshots)
