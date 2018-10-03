@@ -7,6 +7,18 @@ for the testing of software and is not intended to ever be installed into the gl
 WP Local Docker is configured to send any container to container traffic for .test TLDs directly to the gateway
 container, so that things like WP Cron and the REST API can work between environments out of the box.
 
+## Migrate a WP Local Docker V1 Environment
+
+`10updocker migrate <OLD_PATH> [NEW_ENV]` will migrate an old standalone WP Local Docker environment into a new WP Local Docker V2
+environment. Before running this command, create a new environment using the `10updocker create` command.
+
+`OLD_PATH` should be the path to the root of your old WP Local Docker environment.
+
+`NEW_ENV` should specify what environment to import into. If omitted, you will be promoted to select from available environments
+
+Example:
+* `10updocker migrate ~/sites/mysite`
+
 ## Delete an Environment
 
 `10updocker delete <hostname>` will delete an environment with the given hostname. Any local files, docker volumes, and 
