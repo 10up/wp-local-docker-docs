@@ -1,7 +1,7 @@
 ## Configuration
 
 If you have not used WP Snapshots with WP Local Docker yet, you'll first need to configure WP Snapshots with your AWS
-credentials. To configure, run `10updocker wpsnapshots configure <repository>`. You will then be prompted to enter
+credentials. To configure, run `10updocker wpsnapshots configure <repository>` (e.g. `10updocker wpsnapshots configure 10up`). You will then be prompted to enter
 your AWS credentials and a few other configuration details. Once complete, the configuration will be available across
 all of your WP Local Docker environments.
 
