@@ -7,3 +7,7 @@ operations and save on bandwidth in the future.
 ## Updating Docker Images
 `10updocker image update` Will determine which of the docker images utilized by WP Local Docker are present on your
 system and update them to the latest version available. 
+
+## Stopping global services
+WP Local Docker relies on a set of global services to function properly. To turn off global services, run 
+`10updocker stop all`. This will stop all environments and then the global services. 
