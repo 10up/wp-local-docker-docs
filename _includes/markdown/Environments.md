@@ -14,7 +14,7 @@ environment. Before running this command, create a new environment using the `10
 
 `OLD_PATH` should be the path to the root of your old WP Local Docker environment.
 
-`NEW_ENV` should specify what environment to import into. If omitted, you will be promoted to select from available environments
+`NEW_ENV` should specify what environment to import into. If omitted, you will be prompted to select from available environments
 
 Example:
 * `10updocker migrate ~/sites/mysite`
