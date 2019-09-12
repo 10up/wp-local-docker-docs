@@ -2,7 +2,7 @@
 
 > WP Local Docker documentation is available at https://10up.github.io/wp-local-docker-docs/.
 
-[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level)
+[![Support Level](https://img.shields.io/badge/support-active-green.svg)](#support-level) [![MIT License](https://img.shields.io/github/license/10up/wp-local-docker-docs.svg)](https://github.com/10up/wp-local-docker-docs/blob/master/LICENSE.md)
 
 ## Running Locally
 
