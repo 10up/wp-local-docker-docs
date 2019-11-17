@@ -8,8 +8,7 @@ Access phpMyAdmin by navigating to [http://localhost:8092](http://localhost:8092
 
 ## MailCatcher
 
-[MailCatcher](https://mailcatcher.me/) is available as part of the globa services statck that is deployed to support all of the environments. It
-is preconfigured to catch mail sent from any of the environments created by WP Local Docker. 
+[MailCatcher](https://mailcatcher.me/) is available as part of the global services stack that is deployed to support all of the environments. It is preconfigured to catch mail sent from any of the environments created by WP Local Docker. 
 
 Access MailCatcher by navigating to [http://localhost:1080](http://localhost:1080).
 
