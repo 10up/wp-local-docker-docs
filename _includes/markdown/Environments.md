@@ -2,8 +2,8 @@
 
 `10updocker create` will present you with a series of prompts to configure your environment to suit your needs.
 
-It is recommended that you use the `.test` top level domain (TLD) for your local environments, as this TLD is reserved 
-for the testing of software and is not intended to ever be installed into the global Domain Name System. Additionally, 
+It is recommended that you use the `.test` top level domain (TLD) for your local environments, as this TLD is reserved
+for the testing of software and is not intended to ever be installed into the global Domain Name System. Additionally,
 WP Local Docker is configured to send any container to container traffic for .test TLDs directly to the gateway
 container, so that things like WP Cron and the REST API can work between environments out of the box.
 
@@ -21,7 +21,7 @@ Example:
 
 ## Delete an Environment
 
-`10updocker delete <hostname>` will delete an environment with the given hostname. Any local files, docker volumes, and 
+`10updocker delete <hostname>` will delete an environment with the given hostname. Any local files, docker volumes, and
 databases related to the environment will be deleted permanently.
 
 A special hostname `all` is available that will delete all environments. You will be asked to confirm deletion of each
@@ -29,7 +29,7 @@ environment.
 
 ## Stop an Environment
 
-`10updocker stop <hostname>` will stop an environment from running while retaining all files, docker volumes, and 
+`10updocker stop <hostname>` will stop an environment from running while retaining all files, docker volumes, and
 databases related to the environment.
 
 A special hostname `all` is available that will stop all running environments as well as the global services.
@@ -46,10 +46,18 @@ A special hostname `all` is available that will start all environments as well a
 
 A special hostname `all` is available that will restart all environments as well as the global services.
 
+## Upgrade an Environment
+
+`10updocker upgrade <hostname>` will upgrade all services associated with a preexisting environment.
+
+This command will assist you with keeping your environments up to date with the most recent upstream changes. If you
+are running an environment that was created before `v2.6.0`, we recommend upgrading your environment for a noticeable
+performance increase.
+
 ## Elasticsearch
 
-If you have enabled Elasticsearch for a particular environment, you can send requests from the host machine to the 
-Elasticsearch server by prefixing the url path with `/__elasticsearch/`. For example, if you wanted to hit the 
+If you have enabled Elasticsearch for a particular environment, you can send requests from the host machine to the
+Elasticsearch server by prefixing the url path with `/__elasticsearch/`. For example, if you wanted to hit the
 `/_all/_search/` endpoint of Elasticsearch, the URL would look like: `http://<hostname>/__elasticsearch/_all/_search`
 
 ## WP Snapshots
@@ -67,9 +75,9 @@ Examples:
 * `10updocker wp search-replace 'mysite.com' 'mysite.test'`
 * `10updocker wp site list`
 
-## Shell 
+## Shell
 
-You can get a shell inside of any container in your environment using the `10updocker shell [<service>]` command. If a 
+You can get a shell inside of any container in your environment using the `10updocker shell [<service>]` command. If a
 service is not provided, the `phpfpm` container will be used by default. Other available services can vary depending
 on the options selected during creation of the environment, but may include:
 * `phpfpm`
