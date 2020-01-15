@@ -1,13 +1,13 @@
 ## Prerequisites
 
-WP Local Docker requires docker, docker-compose, Node, and npm. It is recommended that you use the latest versions of 
-docker and docker-compose. Node 10 (current LTS version) is the only version of node that is supported. While WP Local 
+WP Local Docker requires docker, docker-compose, Node, and npm. It is recommended that you use the latest versions of
+docker and docker-compose. Node 10 (current LTS version) is the only version of node that is supported. While WP Local
 Docker _may_ work with other versions of Node, compatibility is not guaranteed.
 
 #### MacOS
-Docker is available for download from the [Docker website](https://docs.docker.com/docker-for-mac/install/) and will
+[Docker Desktop](https://docs.docker.com/docker-for-mac/install/) is available for download from the [Docker website](https://docs.docker.com/docker-for-mac/install/) and will
 install docker-compose automatically. NodeJS and npm can be installed from the [NodeJS website](https://nodejs.org),
-via a package manager, such as [Homebrew](https://brew.sh/), or using a version manager, such as 
+via a package manager, such as [Homebrew](https://brew.sh/), or using a version manager, such as
 [nvm](https://github.com/creationix/nvm).  
 
 ##### NodeJS EACCESS Error
@@ -16,7 +16,7 @@ global npm packages without using sudo. Npm has an article on [preventing permis
 if you'd like to run the command without sudo. Alternatively, just run the install command with sudo.
 
 #### Windows
-Docker is available for download from the [Docker website](https://docs.docker.com/docker-for-windows/install/) and will
+[Docker Desktop](https://docs.docker.com/docker-for-windows/install/) is available for download from the [Docker website](https://docs.docker.com/docker-for-windows/install/) and will
 install docker-compose automatically. NodeJS and npm can be installed from the [NodeJS website](https://nodejs.org).
 
 #### Linux
@@ -32,9 +32,9 @@ Once all installation prerequisites have been met, WP Local Docker is installed 
 ## Configuration
 
 The first time you run a WP Local Docker command, default configuration settings will be used if you have not manually
-configured WP Local Docker beforehand. By default, WP Local Docker will store all environments within the 
-`~/wp-local-docker-sites` directory and try to manage your hosts file when creating and deleting environments. If you 
-would like to customize the environment path or opt to not have WP Local Docker update your hosts file, run 
+configured WP Local Docker beforehand. By default, WP Local Docker will store all environments within the
+`~/wp-local-docker-sites` directory and try to manage your hosts file when creating and deleting environments. If you
+would like to customize the environment path or opt to not have WP Local Docker update your hosts file, run
 `10updocker configure` and follow the prompts.
 
 ## Updating
