@@ -1,6 +1,6 @@
 ## Prerequisites
 
-WP Local Docker requires docker, docker-compose, Node, and npm. It is recommended that you use the latest versions of
+[WP Local Docker](https://github.com/10up/wp-local-docker-v2) requires docker, docker-compose, Node, and npm. It is recommended that you use the latest versions of
 docker and docker-compose. Node 10 (current LTS version) is the only version of node that is supported. While WP Local
 Docker _may_ work with other versions of Node, compatibility is not guaranteed.
 

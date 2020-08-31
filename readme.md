@@ -10,6 +10,10 @@ To render these docs locally, run:
 
 `docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" cmmarslender/ghpages:latest`
 
+## Download WP Local Docker
+
+You can visit the [GitHub repo for WP Local Docker](https://github.com/10up/wp-local-docker-v2) or [download WP Local Docker directly ☞](https://codeload.github.com/10up/wp-local-docker-v2/zip/master).
+
 ## Support Level
 
 **Active:** 10up is actively working on this, and we expect to continue work for the foreseeable future including keeping tested up to the most recent version of WordPress.  Bug reports, feature requests, questions, and pull requests are welcome.
