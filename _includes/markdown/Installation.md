@@ -1,8 +1,7 @@
 ## Prerequisites
 
 [WP Local Docker](https://github.com/10up/wp-local-docker-v2) requires docker, docker-compose, Node, and npm. It is recommended that you use the latest versions of
-docker and docker-compose. Node 10 (current LTS version) is the only version of node that is supported. While WP Local
-Docker _may_ work with other versions of Node, compatibility is not guaranteed.
+docker and docker-compose. Node 12 is the minimum version of node that is currently supported. While WP Local Docker _may_ work with other versions of Node, compatibility is not guaranteed.
 
 #### MacOS
 [Docker Desktop](https://docs.docker.com/docker-for-mac/install/) is available for download from the [Docker website](https://docs.docker.com/docker-for-mac/install/) and will
