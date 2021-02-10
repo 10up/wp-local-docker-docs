@@ -16,7 +16,7 @@ if you'd like to run the command without sudo. Alternatively, just run the insta
 
 #### Windows
 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) is available for download from the [Docker website](https://docs.docker.com/docker-for-windows/install/) and will
-install docker-compose automatically. NodeJS and npm can be installed from the [NodeJS website](https://nodejs.org).
+install docker-compose automatically. NodeJS and npm can be installed from the [NodeJS website](https://nodejs.org). You may also need [Python](https://www.python.org/downloads/windows/) 3.7+ and [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2015 or newer with the [“Desktop development with C++” workload](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-160).
 
 #### Linux
 Docker has platform specific installation instructions available for linux on their [documentation site](https://docs.docker.com/install/#supported-platforms).
