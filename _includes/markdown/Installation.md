@@ -18,6 +18,16 @@ if you'd like to run the command without sudo. Alternatively, just run the insta
 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) is available for download from the [Docker website](https://docs.docker.com/docker-for-windows/install/) and will
 install docker-compose automatically. NodeJS and npm can be installed from the [NodeJS website](https://nodejs.org). You may also need [Python](https://www.python.org/downloads/windows/) 3.7+ and [Visual Studio](https://visualstudio.microsoft.com/downloads/) 2015 or newer with the [“Desktop development with C++” workload](https://docs.microsoft.com/en-us/cpp/build/vscpp-step-0-installation?view=msvc-160).
 
+It is recommended that you use the [WSL/2 backend for Docker)(https://docs.docker.com/docker-for-windows/wsl/). You should use ([nvm](https://github.com/creationix/nvm) to install Node inside of your default Linux distro. Once you have, you can install WP Local Docker, from inside of Linux, following the [installation instructions](#Installation).
+
+It is helpful to share git credentials between Windows and WSL/2. To do so, run the following, from inside of your default Linux, making sure to change `USER-NAME` to your Windows username:
+
+```bash
+git config --global credential.helper "/mnt/c/Program\ Files/Git/mingw64/libexec/git-core/git-credential-manager.exe"
+cd ~/.ssh
+cp /mnt/c/Users/USER-NAME/.ssh/id_rsa* .
+```
+
 #### Linux
 Docker has platform specific installation instructions available for linux on their [documentation site](https://docs.docker.com/install/#supported-platforms).
 Once docker is installed, you will need to [manually install docker compose](https://docs.docker.com/compose/install/).
