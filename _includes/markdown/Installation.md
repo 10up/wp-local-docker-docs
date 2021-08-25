@@ -14,12 +14,8 @@ If Node was installed via the download from the NodeJS website, you will likely 
 global npm packages without using sudo. Npm has an article on [preventing permission errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions#option-2-change-npms-default-directory-to-another-directory)
 if you'd like to run the command without sudo. Alternatively, just run the install command with sudo.
 
-##### M1 Mac install
+##### M1 Mac
 As for August 2021, installation on ARM-based Mac works with WP Local Docker 2.8.2. Please make sure you are using LTS version of Node. Tested with Node v14.17.5 with NPM 7.20.3. Installation with latest Node (16.7.0) fails.
-
-```bash
-npm install -g wp-local-docker@release_2_8_2
-```
 
 #### Windows
 [Docker Desktop](https://docs.docker.com/docker-for-windows/install/) is available for download from the [Docker website](https://docs.docker.com/docker-for-windows/install/) and will
@@ -44,6 +40,10 @@ NodeJS can be installed via a package manager for many linux platforms [followin
 
 Once all installation prerequisites have been met, WP Local Docker is installed as a global npm package by running
 `npm install -g wp-local-docker`. You can confirm it has been installed by running `10updocker --version`.
+
+### M1 Mac
+
+Use 2.8.2 release: `npm install -g wp-local-docker@release_2_8_2`
 
 ## Configuration
 
