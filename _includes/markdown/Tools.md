@@ -37,3 +37,20 @@ Make sure your IDE is listening for PHP debug connections and set up a path mapp
         }
 ]
 ```
+
+### Xdebug 3 configuration
+
+Replace the Xdebug configuration file at `config/php-fpm/docker-php-ext-xdebug.ini` with the following:
+```
+xdebug.mode=debug
+xdebug.start_with_request=yes
+xdebug.client_host=host.docker.internal
+```
+
+Xdebug 3 changes the default port from `9000` to `9003`. If you want to use a custom port, make sure to include it in the configuration file:
+
+```
+...
+xdebug.client_host=host.docker.internal
+xdebug.client_port=<custom_port>
+```
