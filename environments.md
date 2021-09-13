@@ -1,4 +1,5 @@
 ---
+redirect_to: https://github.com/10up/wp-local-docker-v2#readme
 page: environments
 title: Managing Environments
 nav: Environments
